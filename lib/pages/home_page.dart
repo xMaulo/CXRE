@@ -3,8 +3,10 @@ import 'package:CXRE/services/authentication.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:CXRE/models/todo.dart';
 import 'package:CXRE/welcome.dart';
+import 'package:CXRE/chat.dart';
 import 'package:flutter/painting.dart';
 import 'dart:async';
+
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.auth, this.userId, this.onSignedOut})
@@ -304,11 +306,10 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Image(
-              image: NetworkImage(
-                  "https://www.nicepng.com/png/detail/328-3287352_kakuzu-akatsuki-kakuzu.png"),
-              width: 600.0,
-            ),
+//            Image(
+//              image: NetworkImage(
+//                  "https://www.nicepng.com/png/detail/328-3287352_kakuzu-akatsuki-kakuzu.png"), height: 500,
+//            ),
             Container(
               child: Row(
                 children: <Widget>[
@@ -326,8 +327,12 @@ class _HomePageState extends State<HomePage> {
                               fontSize: 20.0),),
                         Padding(
                           padding: EdgeInsets.all(0.0),
-                        )
-                      ],
+                        ),
+
+                        Container(
+                          height: 460,
+                        ),
+                     ],
                     ),
                   ),
                 ],
@@ -336,6 +341,11 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black,
+        child: Icon(Icons.chat, color: Colors.red,),
+        onPressed: () => Chat(),
+      ), //
     );
   }
 }

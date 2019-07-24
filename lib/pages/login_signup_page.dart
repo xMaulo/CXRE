@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:CXRE/services/authentication.dart';
-import 'package:CXRE/HomePage.dart';
+//import 'package:CXRE/home_page.dart';
 
 class LoginSignUpPage extends StatefulWidget {
   LoginSignUpPage({this.auth, this.onSignedIn});
@@ -104,7 +104,8 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
     _isIos = Theme.of(context).platform == TargetPlatform.iOS;
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text('Flutter login demo'),
+          backgroundColor: Colors.black,
+          title: new Text('CXRE', style: TextStyle(color: Colors.red,)),
         ),
         body: Stack(
           children: <Widget>[
@@ -232,7 +233,7 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
   }
 
   Widget _showSecondaryButton() {
-    return new FlatButton(
+    return new MaterialButton(
       child: _formMode == FormMode.LOGIN
           ? new Text('Create an account',
               style: new TextStyle(fontSize: 18.0, fontWeight: FontWeight.w300))
@@ -253,12 +254,12 @@ class _LoginSignUpPageState extends State<LoginSignUpPage> {
           child: new RaisedButton(
             elevation: 5.0,
             shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0)),
-            color: Colors.blue,
+            color: Colors.black,
             child: _formMode == FormMode.LOGIN
                 ? new Text('Login',
-                    style: new TextStyle(fontSize: 20.0, color: Colors.white))
+                    style: new TextStyle(fontSize: 20.0, color: Colors.red))
                 : new Text('Create account',
-                    style: new TextStyle(fontSize: 20.0, color: Colors.white)),
+                    style: new TextStyle(fontSize: 20.0, color: Colors.red)),
             onPressed: _validateAndSubmit,
           ),
         ));
