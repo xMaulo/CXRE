@@ -1,0 +1,48 @@
+{
+    "project_info": {
+      "project_number": "132204883000",
+      "firebase_url": "https://cxre-56186.firebaseio.com",
+      "project_id": "cxre-56186",
+      "storage_bucket": "cxre-56186.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:132204883000:android:c9335ae52d3df0c1",
+          "android_client_info": {
+            "package_name": "com.example.drawer"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "132204883000-hpivgr5u86pc20vkil9tnotk13kq5gvi.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyD6qjXohUxjODxASFz5VBHeVFqtlHv6-g4"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "132204883000-hpivgr5u86pc20vkil9tnotk13kq5gvi.apps.googleusercontent.com",
+                "client_type": 3
+              },
+              {
+                "client_id": "132204883000-ugbj1sb00b6b2p6ddg15u0ko8slbe5b3.apps.googleusercontent.com",
+                "client_type": 2,
+                "ios_info": {
+                  "bundle_id": "CXRE"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
+  
